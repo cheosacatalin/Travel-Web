@@ -1,0 +1,615 @@
+ BASIC SETUP*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body { font-family: 'Austin News Text Roman', 'Georgia', 'Times', serif; 
+	overflow-x: hidden;
+}
+
+/* NAV*/
+.navbar { padding: 0 50px; 
+	-webkit-backface-visibility: hidden;
+}
+
+/* --------------------------------------------------------------------------------*/
+/* HOME*/
+/* --------------------------------------------------------------------------------*/
+/* ----------------------------------------*/
+/* INTRODUCTION*/
+/* ----------------------------------------*/
+#first-intro {
+	font-size: 60px;
+	padding-top: 40px;
+	text-align: center;
+}
+
+#second-intro {
+	font-size: 40px;
+	text-align: center;
+}
+
+.p-intro {
+	font-size: 20px;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.world {
+	background-image: url(world5.jpg);
+	margin: 50px auto;
+	opacity: 0.9;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	background-attachment: fixed;
+}
+
+/* ----------------------------------------*/
+/* LOS ANGELES*/
+/* ----------------------------------------*/
+.la {
+	padding: 0;
+	margin: 50px 0;
+	background-color: #000000;
+	position: relative;
+}
+
+.la img {
+	width: 100%;
+	max-height: 400px;
+	opacity: 0.3;
+}
+
+.la h1 {
+	position: absolute;
+	top: 20%;
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+
+.la a {
+	position: absolute;
+	bottom: 30%;
+	left: 45%;
+	font-size: 17px;
+}
+
+/* ----------------------------------------*/
+/* TOP 3 DESTINATIONS*/
+/* ----------------------------------------*/
+#top-head {
+	font-size: 60px;
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+.top-destination {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.top-img {
+	padding: 10px;
+	width: 350px;
+	height: 250px;
+	display: inline-block;
+}
+
+.dest-title { text-align: center; }
+
+figure img {
+	-webkit-transition: all 0.5s ease; /* Safari and Chrome */
+    -moz-transition: all 0.5s ease; /* Firefox */
+    -ms-transition: all 0.5s ease; /* IE 9 */
+    -o-transition: all 0.5s ease; /* Opera */
+    transition: all 0.5s ease;
+    opacity: 0.85;
+}
+
+figure:hover img {
+	-webkit-transform:scale(1.05); /* Safari and Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.05); /* IE 9 */
+    -o-transform:scale(1.05); /* Opera */
+     transform:scale(1.05);
+     opacity: 1;    
+}
+
+.img-description {
+	position: absolute;
+	top: 150px;
+	text-align: center;
+	visibility: hidden;
+	color: #fff;
+	font-weight: bold;
+    font-size: 20px;
+    left: 120px;
+}
+
+figure:hover .img-description { visibility: visible; }
+
+.img-description:after {
+	content: '';
+    position: absolute;
+    left: 0;
+  	display: inline-block;
+	height: 1em;
+	width: 100%;
+	border-bottom: 1px solid;
+	margin-top: 10px;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+.img-description:hover:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/* ----------------------------------------*/
+/* PRODUCTS AND SERVICES*/
+/* ----------------------------------------*/
+.accomm {
+	padding-bottom: 15px;
+	width: 220px;
+	height: 300px;
+}
+
+.products {
+	font-size: 60px;
+	text-align: center;
+	margin: 50px 0;
+}
+
+.figcap1 {
+	text-align: center;
+	font-size: 20px;
+}
+
+.figcap2 {
+	border-bottom: 2px solid teal;
+	margin-left: 1.66%;
+	padding: 5px 0 20px 0;
+	width: 60%;
+	font-size: 15px;
+}
+
+.describe {
+	width: 85%;
+	text-align: justify;
+	font-size: 12px;
+	border: none;
+}
+
+/* ----------------------------------------*/
+/* FOOTER*/
+/* ----------------------------------------*/
+.foot {
+	background: #343a40;
+	color: white;
+ 	text-align: center;
+ 	padding-bottom: 15px;
+}
+
+.foot-title {
+	padding: 40px 0;
+	font-size: 40px;
+	text-align: center;
+}
+/* --------------------------------------------------------------------------------*/
+/* HOME*/
+/* --------------------------------------------------------------------------------*/
+
+
+
+/* --------------------------------------------------------------------------------*/
+/* TOURS PAGE 2 */
+/* --------------------------------------------------------------------------------*/
+/* ----------------------------------------*/
+/* HEAD SECTION*/
+/* ----------------------------------------*/
+.head-section {
+ 	text-align: center;
+ 	padding: 10px 0;
+ 	margin: 50px 0;
+ 	color: #343a40;
+}
+
+/* ----------------------------------------*/
+/* Best SELLING TRIPS*/
+/* ----------------------------------------*/
+.trips { padding: 0;}
+
+.trips-head {
+	background: #343a40;
+	color: #fff;
+	padding: 20px 0;
+}
+
+/* ----------------------------------------*/
+/* LAST MINUTE*/
+/* ----------------------------------------*/
+.last-minute {
+	float: left;
+	margin-top: 15px;
+	max-width: 495px; 
+	max-height: 450px;
+}
+.prim-p a { color: #343a40; }
+
+.prim-p {
+	font-size: 17px;
+	text-align: justify;
+	width: 50%;
+	display: inline-block;
+	margin: 10px 30px;
+	padding-left: 20px;
+}
+
+.second-p {
+	font-size: 15px;
+	padding: 15px 0;
+}
+
+.last-button {
+	background: #343a40;
+	font-size: 25px;
+	margin: 0px 20px 10px 50px;
+}
+
+/* ----------------------------------------*/
+/* TOURS*/
+/* ----------------------------------------*/
+.title { text-align: center; }
+
+.wrap { display: inline-block; }
+
+.image-tour1 {
+	max-width: 220px;
+	float: left;
+}
+.image-tour2 {
+	max-width: 220px;
+	float: right;
+}
+
+.block-1 {
+	display: inline-block;
+	margin-bottom: 30px;
+	font-size: 14px;
+	width: 25%;
+	text-align: justify;
+	padding: 25px 30px 29px 30px;	
+	/*box-shadow: 0px 0px 0px 1px teal;*/
+    transition: box-shadow 0.3s linear;
+}
+
+.block-1:hover { box-shadow: 0px 0px 0px 3px teal; }
+
+.block-2:hover { box-shadow: 0px 0px 0px 3px teal; }
+
+.block-2 {
+	display: inline-block;
+	float: right;
+	font-size: 14px;
+	width: 25%;
+	text-align: justify;
+	padding: 25px 30px 29px 30px;
+	/*box-shadow: 0px 0px 0px 1px teal;*/
+    transition: box-shadow 0.3s linear;
+}
+
+.par {
+	font-size: 14px;
+	text-align: center;
+}
+
+span {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.span-title {
+	padding-bottom: 10px;
+	border-bottom: 1px solid teal;
+}
+
+.p-trips { padding-top: 20px; }
+
+/* ----------------------------------------*/
+/* COPYRIGHT*/
+/* ----------------------------------------*/
+.copy {
+	padding: 0;
+	margin: 0;
+	font-size: 15px;
+	text-align: center;
+}
+/* --------------------------------------------------------------------------------*/
+/* TOURS PAGE 2 */
+/* --------------------------------------------------------------------------------*/
+
+
+/* --------------------------------------------------------------------------------*/
+/* DEALS PAGE 3 */
+/* --------------------------------------------------------------------------------*/
+/* ----------------------------------------*/
+/* CONTENT*/
+/* ----------------------------------------*/
+.dest-img {
+	width: 100%;
+	height: auto;
+	max-width: 360px
+	max-height: 270px;
+}
+
+.noHover {
+	pointer-events: none;
+	border: 1px solid black;
+}
+
+.item-description {
+	background-color: rgba(0, 0, 0, 0.7);
+	font-size: 16px;
+	margin-bottom: 0;
+	height: 60px;
+	position: relative;
+	top: 15px;
+	margin-top: -92px;
+}
+
+.p-item-title {
+	padding: 22px 10px 18px;
+	color: white;
+	display: inline-block;
+	position: absolute;
+}
+
+.p-item-span {
+	position: absolute;
+	right: 5px;
+	color: white;
+	display: inline-block;
+	font-size: 14px;
+	text-align: center;
+	padding: 22px 10px 18px;
+	border-left: 2px solid red;
+	text-transform: uppercase;
+}
+
+.item-info {
+	position: relative;
+	top: 15px;
+	text-align: left;
+	padding: 0;
+	margin: 0; 
+	background-color: rgba(255, 0, 0, 0.9);
+}
+
+.item-info a {
+	color: white;
+	font-size: 14px;
+	text-transform: uppercase;
+	position: relative;
+	left: 10px;
+}
+
+.item-info span {
+	color: white;
+	float: right;
+	position: relative;
+	right: 20px;
+}
+
+.item-text {
+	background-color: white;
+	font-size: 15px;
+	padding: 20px 15px;
+	color: black;
+	text-align: justify;
+	margin-bottom: 30px;
+}
+
+.pagina { font-size: 12px; }
+
+/* ----------------------------------------*/
+/* DESTINATIONS /TOURS*/
+/* ----------------------------------------*/
+.content img {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.main { margin: 20px 60px; }
+
+.details {
+	text-align: justify;
+	font-size: 16px;
+	width: 60%;
+	padding: 15px 0;
+}
+.details h3 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.details li {
+	font-size: 15px;
+	list-style: none;
+}
+.thumbnail img {
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid black;
+}
+
+.rand img {
+	max-height: 135px;
+	max-width: 205px;
+}
+
+
+/* --------------------------------------------------------------------------------*/
+/* CONTACT PAGE 5 */
+/* --------------------------------------------------------------------------------*/
+/* ----------------------------------------*/
+/* INFO*/
+/* ----------------------------------------*/
+.info-container { display: inline-block; }
+
+.info {
+	width: 48%;
+	float: left;
+	-webkit-box-shadow: 0px 0px 14px 3px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 0px 14px 3px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 14px 3px rgba(0,0,0,0.05);
+}
+
+.suggestions {
+	width: 48%;
+	float: right;
+	-webkit-box-shadow: 0px 0px 14px 3px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 0px 14px 3px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 14px 3px rgba(0,0,0,0.05);
+}
+
+.info-title {
+	font-size: 25px;
+	display: inline-block;
+	margin-left: 15px;
+	margin-bottom: 0;
+	padding-bottom: 5px;
+	border-bottom: 1px solid black;
+}
+
+.info-p {
+	font-size: 15px;
+	display: inline-block;
+	margin: 0;
+	margin-left: 15px;
+	padding-bottom: 10px;
+}
+
+/* ----------------------------------------*/
+/* FORM*/
+/* ----------------------------------------*/
+.form { padding: 0; }
+
+.name-email { padding: 20px 0; }
+
+textarea {
+	width: 100%;
+	height: 300px;
+	padding: 10px 20px;
+}
+
+.send-button {
+	background: red;
+	margin: 20px;
+}
+/* --------------------------------------------------------------------------------*/
+/* CONTACT PAGE 5 */
+/* --------------------------------------------------------------------------------*/
+
+
+/* QUERIES */
+
+ /*Small devices (landscape phones, 544px and up)*/
+  @media only screen and (max-width: 480px) {  
+    html {font-size: 15px;}
+    footer { margin: 0; }
+    .head-section h1 { font-size: 45px; }
+    .top-img { width: 200px;
+    	height: 200px;
+    	margin-left: 45px;
+    	margin-top: 20px;
+    	text-align: center;
+     }
+     #first-intro { font-size: 30px; }
+     #second-intro { font-size: 20px; }
+     .p-intro { font-size: 15px; }	
+     #top { font-size: 40px; }
+     .products { font-size: 40px; }
+     .la h1 { font-size: 20px; 
+      	margin-bottom: 10px;
+      }
+     .la a { font-size: 10px;  
+      	padding: 5px 5px;}
+     .last-minute { width: 400px;
+      	height: 250px; }
+     .tour-title { font-size: 40px; }
+     .head-section { padding: 0;
+     	 margin-bottom: 0; }
+     .prim-p { width: 80%; }
+     .trips-head { padding: 15px 20px; }
+     .trips-head h1 { font-size: 40px; }
+     .block-1 { width: 100%; 
+      	display: inline-block;}
+     .image-tour2 { display: block;
+      	float: left; }
+     .block-2 { width: 100%; 
+      	display: block;
+      	float: left;
+     }
+     .p-trips { font-size: 12px; }
+ }
+
+ /* Small phones to small tablets: from 481px to 767px */
+  @media only screen and (max-width: 767px)) {  
+    html {font-size: 16px;}
+    .head-section h1 { font-size: 55px; }
+    .la h1 { font-size: 20px; 
+     	margin-bottom: 10px;
+      }
+    .la a { font-size: 10px;  
+     	padding: 5px 5px;}
+     .prim-p { width: 80%; }
+     .trips-head h1 { font-size: 10px; }
+     .block-1 { width: 100%; 
+     	display: inline-block;}
+     .image-tour2 { display: block;
+     	float: left; }
+     .block-2 { width: 100%; 
+     	display: block;
+     	float: left;
+     }
+     .p-trips { font-size: 12px; }
+  }
+
+  /* Small tablet to big tablet: from 768px to 1023px*/
+  @media only screen and (max-width: 1023px) { 
+    html {font-size: 17px;}
+    .la h1 { font-size: 40px; 
+     	margin-bottom: 10px;
+      }
+    .la a { font-size: 10px;  
+     	padding: 5px 5px;}
+     .prim-p { width: 80%; }
+     .trips-head { padding: 15px 20px; }
+     .trips-head h1 { font-size: 40px; }
+     .block-1 { width: 100%; 
+     	display: inline-block;}
+     .image-tour2 { display: block;
+     	float: left; }
+     .block-2 { width: 100%; 
+     	display: block;
+     	float: left;
+     }
+     .p-trips { font-size: 12px; }
+  }
+
+/* Big tablet to 1200px (widths smaller than the 1140px row)*/
+  @media only screen and (max-width: 1200px) {  
+    html {font-size: 19px;}
+  }
+ /* QUERIES 
